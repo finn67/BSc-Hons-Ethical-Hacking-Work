@@ -1,0 +1,90 @@
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="HTML.css">
+</head>
+<body>
+
+<header>
+  <h2>Kubernetes Hardening Report</h2>
+</header>
+<img id = "sum" src="Summary.png" alt="Trulli" width="600" height="370">
+<h4 id = "hedp">Passed:</h4>
+    <p class = "passed1">277</p>
+    <h4 id ="hedf">Failed:</h4>
+    <p class = "failed1">80</p>
+    </div>
+<section>
+  <nav>
+    <img id = "kube-scheduler" src="kube-scheduler.png" alt="Trulli" width="374" height="300">
+  </nav>
+  
+  <article>
+    <h1 id = "Sched">kube-scheduler.yaml</h1>
+    <h4>Passed:</h4>
+    <p class = "passed">73</p>
+    <h4>Failed:</h4>
+    <p class = "failed">16</p>
+    <p>The Kubernetes scheduler is a control plane process which assigns Pods to Nodes. The scheduler determines which Nodes are valid placements for each Pod in the scheduling queue according to constraints and available resources. The scheduler then ranks each valid Node and binds the Pod to a suitable Node</p>
+  </article>
+</section>
+
+<section>
+  <nav>
+    <img id = "kube-scheduler" src="kube-apiserver.png" alt="Trulli" width="374" height="300">
+  </nav>
+  
+  <article>
+    <h1 id = "Sched">kube-apiserver.YAML</h1>
+    <h4>Passed:</h4>
+    <p class = "passed">58</p>
+    <h4>Failed:</h4>
+    <p class = "failed">31</p>
+    <p>The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact.</p>
+  </article>
+</section>
+
+<section>
+  <nav>
+    <img id = "kube-scheduler" src="kube-controller-manager.png" alt="Trulli" width="374" height="300">
+  </nav>
+  
+  <article>
+    <h1 id = "Sched">kube-controller-manager.YAML</h1>
+    <h4>Passed:</h4>
+    <p class = "passed">70</p>
+    <h4>Failed:</h4>
+    <p class = "failed">19</p>
+    <p>The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes. In applications of robotics and automation, a control loop is a non-terminating loop that regulates the state of the system.</p>
+  </article>
+</section>
+
+<section>
+  <nav>
+    <img id = "kube-scheduler" src="etcd.png" alt="Trulli" width="374" height="300">
+  </nav>
+  
+  <article>
+    <h1 id = "Sched">etcd.YAML</h1>
+    <h4>Passed:</h4>
+    <p class = "passed">76</p>
+    <h4>Failed:</h4>
+    <p class = "failed">14</p>
+    <p>etcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.</p>
+  </article>
+</section>
+<footer>
+<p>Tue May 10 00:08:23 2022</p>
+</footer>
+
+</body>
+
+</html>
+
+
+    

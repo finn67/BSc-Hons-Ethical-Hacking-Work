@@ -1,0 +1,1031 @@
+{
+    "check_type": "kubernetes",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_K8S_94",
+                "bc_check_id": "BC_K8S_70",
+                "check_name": "Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAuditLogMaxSize",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-audit-log-maxsize-argument-is-set-to-100-or-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_30",
+                "bc_check_id": "BC_K8S_28",
+                "check_name": "Apply security context to your pods and containers",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/securityContext"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ContainerSecurityContext",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_28"
+            },
+            {
+                "check_id": "CKV_K8S_93",
+                "bc_check_id": "BC_K8S_69",
+                "check_name": "Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAuditLogMaxBackup",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-audit-log-maxbackup-argument-is-set-to-10-or-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_81",
+                "bc_check_id": "BC_K8S_58",
+                "check_name": "Ensure that the admission control plugin SecurityContextDeny is set if PodSecurityPolicy is not used",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerSecurityContextDenyPlugin",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-admission-control-plugin-securitycontextdeny-is-set-if-podsecuritypolicy-is-not-used"
+            },
+            {
+                "check_id": "CKV_K8S_83",
+                "bc_check_id": "BC_K8S_60",
+                "check_name": "Ensure that the admission control plugin NamespaceLifecycle is set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerNamespaceLifecyclePlugin",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-admission-control-plugin-namespacelifecycle-is-set"
+            },
+            {
+                "check_id": "CKV_K8S_40",
+                "bc_check_id": "BC_K8S_37",
+                "check_name": "Containers should run as a high UID to avoid host conflict",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.RootContainersHighUID",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_37"
+            },
+            {
+                "check_id": "CKV_K8S_73",
+                "bc_check_id": "BC_K8S_51",
+                "check_name": "Ensure that the --kubelet-certificate-authority argument is set as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/initContainers/[0]"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerkubeletCertificateAuthority",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-kubelet-certificate-authority-argument-is-set-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_80",
+                "bc_check_id": "BC_K8S_57",
+                "check_name": "Ensure that the admission control plugin AlwaysPullImages is set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAlwaysPullImagesPlugin",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-admission-control-plugin-alwayspullimages-is-set"
+            },
+            {
+                "check_id": "CKV_K8S_28",
+                "bc_check_id": "BC_K8S_27",
+                "check_name": "Minimize the admission of containers with the NET_RAW capability",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/securityContext/capabilities/drop"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.DropCapabilities",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_27"
+            },
+            {
+                "check_id": "CKV_K8S_13",
+                "bc_check_id": "BC_K8S_12",
+                "check_name": "Memory limits should be set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/resources/limits/memory"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.MemoryLimits",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_12"
+            },
+            {
+                "check_id": "CKV_K8S_91",
+                "bc_check_id": "BC_K8S_67",
+                "check_name": "Ensure that the --audit-log-path argument is set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAuditLog",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-audit-log-path-argument-is-set"
+            },
+            {
+                "check_id": "CKV_K8S_68",
+                "bc_check_id": "BC_K8S_46",
+                "check_name": "Ensure that the --anonymous-auth argument is set to false",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAnonymousAuth",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-anonymous-auth-argument-is-set-to-false-1"
+            },
+            {
+                "check_id": "CKV_K8S_90",
+                "bc_check_id": "BC_K8S_66",
+                "check_name": "Ensure that the --profiling argument is set to false",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerProfiling",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-profiling-argument-is-set-to-false-2"
+            },
+            {
+                "check_id": "CKV_K8S_88",
+                "bc_check_id": "BC_K8S_64",
+                "check_name": "Ensure that the --insecure-port argument is set to 0",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerInsecurePort",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-insecure-port-argument-is-set-to-0"
+            },
+            {
+                "check_id": "CKV_K8S_20",
+                "bc_check_id": "BC_K8S_19",
+                "check_name": "Containers should not run with allowPrivilegeEscalation",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/securityContext/allowPrivilegeEscalation"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.AllowPrivilegeEscalation",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_19"
+            },
+            {
+                "check_id": "CKV_K8S_84",
+                "bc_check_id": "BC_K8S_61",
+                "check_name": "Ensure that the admission control plugin PodSecurityPolicy is set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerPodSecurityPolicyPlugin",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-admission-control-plugin-podsecuritypolicy-is-set"
+            },
+            {
+                "check_id": "CKV_K8S_38",
+                "bc_check_id": "BC_K8S_35",
+                "check_name": "Ensure that Service Account Tokens are only mounted where necessary",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ServiceAccountTokens",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_35"
+            },
+            {
+                "check_id": "CKV_K8S_12",
+                "bc_check_id": "BC_K8S_11",
+                "check_name": "Memory requests should be set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/resources/requests/memory"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.MemoryRequests",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_11"
+            },
+            {
+                "check_id": "CKV_K8S_15",
+                "bc_check_id": "BC_K8S_14",
+                "check_name": "Image Pull Policy should be Always",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/image",
+                        "spec/containers/[0]/imagePullPolicy"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ImagePullPolicyAlways",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_14"
+            },
+            {
+                "check_id": "CKV_K8S_11",
+                "bc_check_id": "BC_K8S_10",
+                "check_name": "CPU limits should be set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/resources/limits/cpu"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.CPULimits",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_10"
+            },
+            {
+                "check_id": "CKV_K8S_104",
+                "bc_check_id": "BC_K8S_78",
+                "check_name": "Ensure that encryption providers are appropriately configured",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerEncryptionProviders",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-etcd-cafile-argument-is-set-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_102",
+                "bc_check_id": "BC_K8S_77",
+                "check_name": "Ensure that the --etcd-ca-file argument is set as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerEtcdCaFile",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-etcd-cafile-argument-is-set-as-appropriate-1"
+            },
+            {
+                "check_id": "CKV_K8S_43",
+                "bc_check_id": "BC_K8S_39",
+                "check_name": "Image should use digest",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/image"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ImageDigest",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_39"
+            },
+            {
+                "check_id": "CKV_K8S_19",
+                "bc_check_id": "BC_K8S_18",
+                "check_name": "Containers should not share the host network namespace",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.SharedHostNetworkNamespace",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_18"
+            },
+            {
+                "check_id": "CKV_K8S_92",
+                "bc_check_id": "BC_K8S_68",
+                "check_name": "Ensure that the --audit-log-maxage argument is set to 30 or as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerAuditLogMaxAge",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-audit-log-maxage-argument-is-set-to-30-or-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_37",
+                "bc_check_id": "BC_K8S_34",
+                "check_name": "Minimize the admission of containers with capabilities assigned",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/securityContext/capabilities/drop"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.MinimizeCapabilities",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_34"
+            },
+            {
+                "check_id": "CKV_K8S_23",
+                "bc_check_id": "BC_K8S_22",
+                "check_name": "Minimize the admission of root containers",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.RootContainers",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_22"
+            },
+            {
+                "check_id": "CKV_K8S_22",
+                "bc_check_id": "BC_K8S_21",
+                "check_name": "Use read-only filesystem for containers where possible",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/securityContext/readOnlyRootFilesystem"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ReadOnlyFilesystem",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/bc_k8s_21"
+            },
+            {
+                "check_id": "CKV_K8S_82",
+                "bc_check_id": "BC_K8S_59",
+                "check_name": "Ensure that the admission control plugin ServiceAccount is set",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerServiceAccountPlugin",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-admission-control-plugin-serviceaccount-is-set"
+            },
+            {
+                "check_id": "CKV_K8S_97",
+                "bc_check_id": "BC_K8S_73",
+                "check_name": "Ensure that the --service-account-key-file argument is set as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerServiceAccountKeyFile",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-service-account-key-file-argument-is-set-as-appropriate"
+            },
+            {
+                "check_id": "CKV_K8S_96",
+                "bc_check_id": "BC_K8S_72",
+                "check_name": "Ensure that the --service-account-lookup argument is set to true",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "spec/containers/[0]/command"
+                    ]
+                },
+                "file_path": "/../../../../etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_abs_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "repo_file_path": "/etc/kubernetes/manifests/kube-apiserver.yaml",
+                "file_line_range": [
+                    1,
+                    127
+                ],
+                "resource": "Pod.kube-system.kube-apiserver",
+                "evaluations": {},
+                "check_class": "checkov.kubernetes.checks.resource.k8s.ApiServerServiceAccountLookup",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "guideline": "https://docs.bridgecrew.io/docs/ensure-that-the-service-account-lookup-argument-is-set-to-true"
+            }
+        ]
+    },
+    "summary": {
+        "passed": 58,
+        "failed": 31,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 1,
+        "checkov_version": "2.0.1037"
+    }
+}
